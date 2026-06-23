@@ -17,3 +17,7 @@ width: 100px;
     border: 2px solid rgb(26, 26, 101);
     cursor: pointer;
 }
+.hidden {
+  visibility: hidden;
+
+}
