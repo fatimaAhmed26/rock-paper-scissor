@@ -19,14 +19,17 @@ choices.addEventListener('click', function(Event){
 
     //hide the choices are not user choice 
     if(userChoice === 'Rock'){
-        rock.setAttribute('disabled', 'disabled')
+        paper.setAttribute('disabled', 'disabled')
+        Scissor.setAttribute('disabled', 'disabled')
         console.log('user chose rock')
-    }if(userChoice === 'Paper'){
-         paper.setAttribute('disabled', 'disabled')
+    }else if(userChoice === 'Paper'){
+         rock.setAttribute('disabled', 'disabled')
+         Scissor.setAttribute('disabled', 'disabled')
         console.log('user chose paper ')
     }
-    if(userChoice === 'Scissor'){
-       Scissor.setAttribute('disabled', 'disabled')
+    else if(userChoice === 'Scissor'){
+       rock.setAttribute('disabled', 'disabled')
+       paper.setAttribute('disabled', 'disabled')
         console.log('user chose Scissor ')
     }
     console.log('user choice: ' + userChoice)
