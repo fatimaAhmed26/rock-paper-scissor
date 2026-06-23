@@ -11,7 +11,7 @@ const rock = document.querySelector('#Rock')
 const paper = document.querySelector('#Paper')
 const Scissor = document.querySelector('#Scissor')
 const reset =document.querySelector('#reset')
-
+const resetDisplay = document.querySelector('#resetDisplay')
 /*----------------------------- Event Listeners -----------------------------*/
 choices.addEventListener('click', function(Event){
 
@@ -34,6 +34,7 @@ choices.addEventListener('click', function(Event){
     // when computer makes a choice 
      let randIndex = Math.floor(Math.random() *3)
     computerChoice = choiceArr[randIndex]
+    resetDisplay.textContent =`Computer chose ${computerChoice}`
 })
 
 //reset button 
